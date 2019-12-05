@@ -35,6 +35,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "060. Permutation Sequence",
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "077. Combinations", "077. Combinations\077. Combinations.vcxproj", "{80DEC9ED-B602-428B-AA07-92ACD151FDBD}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "151. Reverse Words in a String", "151. Reverse Words in a String\151. Reverse Words in a String.vcxproj", "{DB17D79D-20ED-4A24-89D3-B9D16A6F7A34}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "152. Maximum Product Subarray", "152. Maximum Product Subarray\152. Maximum Product Subarray.vcxproj", "{A9718B58-80CF-42E5-85FA-DEDD49D04878}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -171,6 +175,22 @@ Global
 		{80DEC9ED-B602-428B-AA07-92ACD151FDBD}.Release|x64.Build.0 = Release|x64
 		{80DEC9ED-B602-428B-AA07-92ACD151FDBD}.Release|x86.ActiveCfg = Release|Win32
 		{80DEC9ED-B602-428B-AA07-92ACD151FDBD}.Release|x86.Build.0 = Release|Win32
+		{DB17D79D-20ED-4A24-89D3-B9D16A6F7A34}.Debug|x64.ActiveCfg = Debug|x64
+		{DB17D79D-20ED-4A24-89D3-B9D16A6F7A34}.Debug|x64.Build.0 = Debug|x64
+		{DB17D79D-20ED-4A24-89D3-B9D16A6F7A34}.Debug|x86.ActiveCfg = Debug|Win32
+		{DB17D79D-20ED-4A24-89D3-B9D16A6F7A34}.Debug|x86.Build.0 = Debug|Win32
+		{DB17D79D-20ED-4A24-89D3-B9D16A6F7A34}.Release|x64.ActiveCfg = Release|x64
+		{DB17D79D-20ED-4A24-89D3-B9D16A6F7A34}.Release|x64.Build.0 = Release|x64
+		{DB17D79D-20ED-4A24-89D3-B9D16A6F7A34}.Release|x86.ActiveCfg = Release|Win32
+		{DB17D79D-20ED-4A24-89D3-B9D16A6F7A34}.Release|x86.Build.0 = Release|Win32
+		{A9718B58-80CF-42E5-85FA-DEDD49D04878}.Debug|x64.ActiveCfg = Debug|x64
+		{A9718B58-80CF-42E5-85FA-DEDD49D04878}.Debug|x64.Build.0 = Debug|x64
+		{A9718B58-80CF-42E5-85FA-DEDD49D04878}.Debug|x86.ActiveCfg = Debug|Win32
+		{A9718B58-80CF-42E5-85FA-DEDD49D04878}.Debug|x86.Build.0 = Debug|Win32
+		{A9718B58-80CF-42E5-85FA-DEDD49D04878}.Release|x64.ActiveCfg = Release|x64
+		{A9718B58-80CF-42E5-85FA-DEDD49D04878}.Release|x64.Build.0 = Release|x64
+		{A9718B58-80CF-42E5-85FA-DEDD49D04878}.Release|x86.ActiveCfg = Release|Win32
+		{A9718B58-80CF-42E5-85FA-DEDD49D04878}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
