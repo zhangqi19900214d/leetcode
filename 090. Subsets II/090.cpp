@@ -1,5 +1,7 @@
 #include <vector>
+#include <set>
 #include <iostream>
+#include <algorithm>
 using namespace std;
 
 /*
@@ -23,45 +25,45 @@ Output:
 
 class Solution {
 public:
+
+	void dfs(int start, vector<int> &ans, set<vector<int>> &result, const vector<int> &nums)
+	{
+		if (ans.size() <= nums.size())
+		{
+			result.insert(ans);
+		}
+		
+		for (int i = start; i < nums.size(); i++)
+		{
+			ans.push_back(nums[i]);
+			dfs(i + 1, ans, result, nums);
+			ans.pop_back();
+		}
+	}
+
 	vector<vector<int>> subsetsWithDup(vector<int>& nums)
 	{
-		vector<vector<int>> result;
+		set<vector<int>> result;
+		vector<int> ans;
 
-		if (nums.size() == 0)
-		{
-			return result;
-		}
-		else if (nums.size() == 1)
-		{
-			result.push_back(nums);
-			return result;
-		}
-		else
-		{
-			int cur = nums[0];
-			vector<vector<int>> sub_result = this->subsetsWithDup(vector<int>(nums.begin() + 1, nums.end()));
+		sort(nums.begin(), nums.end());
+		dfs(0, ans, result, nums);
 
-			for (int i = 0; i < sub_result.size(); ++i)
-			{
-				vector<int> item = sub_result[i];
-				result.push_back(item);
+		vector<vector<int>> res;
 
-				for (int j = 0; j <= item.size(); ++j)
-				{
-					vector<int> res = item;
-					res.insert(res.begin() + j, cur);
-					result.emplace_back(res);
-				}
-			}
-			return result;
+		for (auto &iter : result)
+		{
+			res.push_back(iter);
 		}
+
+		return res;
 	}
 };
 
 int main()
 {
 	auto sol = new Solution();
-	vector<int> nums{ 1, 2, 2 };
+	vector<int> nums{ 4,4,4,4,1,4 };
 
 	auto res = sol->subsetsWithDup(nums);
 	for (auto item : res)
@@ -72,4 +74,6 @@ int main()
 		}
 		cout << endl;
 	}
+
+	cout << res.size() << endl;
 }
