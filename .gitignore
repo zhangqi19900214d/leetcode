@@ -1,5 +1,9 @@
 */Debug/*
-*/*.tlog
+*.tlog
+*.log
+*.idb
+*.obj
+*.pdb
 leetcode.VC.db
 .vs
 leetcode.VC.VC.opendb
