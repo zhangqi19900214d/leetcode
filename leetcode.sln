@@ -49,6 +49,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "347. Top K Frequent Element
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "093. Restore IP Addresses", "093. Restore IP Addresses\093. Restore IP Addresses.vcxproj", "{FE1717ED-BE5F-4638-BD19-16EF570DC76C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "018. 4Sum", "018. 4Sum\018. 4Sum.vcxproj", "{3502895D-AC71-48F9-8075-02E63A8E7FFE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -241,6 +243,14 @@ Global
 		{FE1717ED-BE5F-4638-BD19-16EF570DC76C}.Release|x64.Build.0 = Release|x64
 		{FE1717ED-BE5F-4638-BD19-16EF570DC76C}.Release|x86.ActiveCfg = Release|Win32
 		{FE1717ED-BE5F-4638-BD19-16EF570DC76C}.Release|x86.Build.0 = Release|Win32
+		{3502895D-AC71-48F9-8075-02E63A8E7FFE}.Debug|x64.ActiveCfg = Debug|x64
+		{3502895D-AC71-48F9-8075-02E63A8E7FFE}.Debug|x64.Build.0 = Debug|x64
+		{3502895D-AC71-48F9-8075-02E63A8E7FFE}.Debug|x86.ActiveCfg = Debug|Win32
+		{3502895D-AC71-48F9-8075-02E63A8E7FFE}.Debug|x86.Build.0 = Debug|Win32
+		{3502895D-AC71-48F9-8075-02E63A8E7FFE}.Release|x64.ActiveCfg = Release|x64
+		{3502895D-AC71-48F9-8075-02E63A8E7FFE}.Release|x64.Build.0 = Release|x64
+		{3502895D-AC71-48F9-8075-02E63A8E7FFE}.Release|x86.ActiveCfg = Release|Win32
+		{3502895D-AC71-48F9-8075-02E63A8E7FFE}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
