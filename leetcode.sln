@@ -51,6 +51,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "093. Restore IP Addresses",
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "018. 4Sum", "018. 4Sum\018. 4Sum.vcxproj", "{3502895D-AC71-48F9-8075-02E63A8E7FFE}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "139. Word Break", "139. Word Break\139. Word Break.vcxproj", "{2069C4B0-0959-4E3E-B408-0CA9E0B09868}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -251,6 +253,14 @@ Global
 		{3502895D-AC71-48F9-8075-02E63A8E7FFE}.Release|x64.Build.0 = Release|x64
 		{3502895D-AC71-48F9-8075-02E63A8E7FFE}.Release|x86.ActiveCfg = Release|Win32
 		{3502895D-AC71-48F9-8075-02E63A8E7FFE}.Release|x86.Build.0 = Release|Win32
+		{2069C4B0-0959-4E3E-B408-0CA9E0B09868}.Debug|x64.ActiveCfg = Debug|x64
+		{2069C4B0-0959-4E3E-B408-0CA9E0B09868}.Debug|x64.Build.0 = Debug|x64
+		{2069C4B0-0959-4E3E-B408-0CA9E0B09868}.Debug|x86.ActiveCfg = Debug|Win32
+		{2069C4B0-0959-4E3E-B408-0CA9E0B09868}.Debug|x86.Build.0 = Debug|Win32
+		{2069C4B0-0959-4E3E-B408-0CA9E0B09868}.Release|x64.ActiveCfg = Release|x64
+		{2069C4B0-0959-4E3E-B408-0CA9E0B09868}.Release|x64.Build.0 = Release|x64
+		{2069C4B0-0959-4E3E-B408-0CA9E0B09868}.Release|x86.ActiveCfg = Release|Win32
+		{2069C4B0-0959-4E3E-B408-0CA9E0B09868}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
