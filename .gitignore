@@ -6,4 +6,5 @@
 *.pdb
 leetcode.VC.db
 .vs
+.enc
 leetcode.VC.VC.opendb
