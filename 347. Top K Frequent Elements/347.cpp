@@ -192,6 +192,56 @@ struct TireTree
 class Solution
 {
 public:
+    int partion(vector<pair<string, int>> &arr, int low, int high)
+    {
+        pair<string, int> key = arr[low];
+        while (low < high)
+        {
+            while (low < high && arr[high].second <= key.second) high--;
+            arr[low] = arr[high];
+            
+            while (low < high && arr[low].second >= key.second) low++;
+            arr[high] = arr[low];
+        }
+
+        arr[low] = key;
+        return low;
+    }
+
+    void topK(vector<pair<string, int>> &arr, int low, int high, int k)
+    {
+        if (low >= high || k >= arr.size())
+        {
+            return;
+        }
+
+        int index = this->partion(arr, low, high);
+#if 0
+        int len = index - low + 1;
+        if (len > k) //还在前半部分
+        {
+            return topK(arr, low, index - 1, k);
+        }
+        else
+        {
+            return topK(arr, index + 1, high, k - len);
+        }
+#else
+        while (index != k - 1)
+        {
+            if (index > k - 1)
+            {
+                high = index - 1;
+            }
+            else
+            {
+                low = index + 1;
+            }
+            index = this->partion(arr, low, high);
+        }
+#endif
+    }
+
 	vector<int> topKFrequent(vector<int>& nums, int k)
 	{
         TireTree tree;
@@ -203,10 +253,13 @@ public:
         vector<pair<string, int>> result;
         tree.check_count(result);
 
+#if 0
         std::sort(result.begin(), result.end(), [](const pair<string, int> &a, const pair<string, int> &b) {
             return a.second > b.second;
         });
-
+#else
+        this->topK(result, 0, result.size() - 1, k);
+#endif
         vector<int> ret;
 
         for (int i = 0; k-- > 0 && i < result.size(); i++)
@@ -220,9 +273,11 @@ public:
 
 int main()
 {
-	auto sol = new Solution();
-	//auto result = sol->topKFrequent(vector<int>{1, 1, 1, 2, 2, 3}, 2);
-    auto result = sol->topKFrequent(vector<int>{1, 2, 3, 1, 2, 4, 5, 5, 6, 7, 7, 8, 2, 3, 1, 1, 1, 10, 11, 5, 6, 2, 4, 7, 8, 5, 6}, 10);
+    auto sol = new Solution();
+    //auto result = sol->topKFrequent(vector<int>{1, 1, 1, 2, 2, 3}, 2);
+    //auto result = sol->topKFrequent(vector<int>{1, 2, 3, 1, 2, 4, 5, 5, 6, 7, 7, 8, 2, 3, 1, 1, 1, 10, 11, 5, 6, 2, 4, 7, 8, 5, 6}, 10);
+    auto result = sol->topKFrequent(vector<int>{4, 1, -1, 2, -1, 2, 3}, 2);
+    //auto result = sol->topKFrequent(vector<int>{3, 0, 1, 0}, 1);
 
 	for (auto res : result)
 	{
